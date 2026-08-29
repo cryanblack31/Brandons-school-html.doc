@@ -116,3 +116,147 @@
 </html>
 
 
+/* GLOBAL STYLES */
+body {
+  background-color: teal;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;  /* stack header, main, footer vertically */
+  align-items: stretch;    /* make them full width */
+  gap: 20px;               /* space between header, main, footer */
+}
+
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.highlight {
+  color: red;
+}
+
+.highlighted-text {
+  color: red;
+}
+
+
+/* HEADER */
+.site-header {
+  background-color: #1e293b;
+  color: white;
+  padding: 24px;
+}
+
+.header-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 40px;
+  margin-bottom: 10px;
+  background-color: rgb(26, 255, 0);
+}
+
+.header-subtitle {
+  font-size: 24px;
+  background-color: yellow;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.header-nav .nav-link {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #334155;
+  padding: 10px 16px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.header-nav .nav-link:hover {
+  background-color: #475569;
+}
+
+
+/* MAIN CONTENT SECTIONS */
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+/* Section background colors */
+#about-me {
+  background-color: blue;
+}
+
+#favorite-snacks {
+  background-color: brown;
+}
+
+#favorite-games {
+  background-color: blueviolet;
+}
+
+
+/* Section Titles & Descriptions */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+/* FLEX ROW FOR IMAGE + LIST */
+.content-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  flex-wrap: wrap; /* helps on small screens */
+}
+
+.image-box {
+  flex: 0 0 auto;
+}
+
+.list-box ul,
+.list-box ol {
+  font-size: 22px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.info-link {
+  font-size: 22px;
+  color: yellow;
+  text-decoration: underline;
+}
+.site-footer {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+}
